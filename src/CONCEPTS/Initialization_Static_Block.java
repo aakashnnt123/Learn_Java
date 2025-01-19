@@ -12,6 +12,7 @@ public class Initialization_Static_Block {
 
 class Box{
     private int lenght, breadth , height;
+    private static int boxCount;
 
     //Parameterized Constructor
     public Box(int l ,int b,int h){
@@ -32,6 +33,11 @@ class Box{
         lenght =50;
         breadth = 60;
         height =70;
+    }
+    //Static block 1
+    static {
+        boxCount=10;
+        System.out.println("Static Block run");
     }
     public void showDimensions(){
         System.out.println("Lenght : "+lenght);
