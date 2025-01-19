@@ -4,12 +4,12 @@ package WORLD;
 //import ASSIGNMENT.A8;
 //import CONCEPTS.Constructor;
 //import CONCEPTS.Singleton;
-import CONCEPTS.Initialization_Static_Block;
+//import CONCEPTS.Initialization_Static_Block;
+import ASSIGNMENT.A9_WRAPPERCLASS;
 
 public class HelloWorld {
     public static void main(String[] args){
-        System.out.println("Main block run");
-        Initialization_Static_Block Q1 = new Initialization_Static_Block();
+        A9_WRAPPERCLASS Q1 = new A9_WRAPPERCLASS();
           Q1.driver();
     }
 }
