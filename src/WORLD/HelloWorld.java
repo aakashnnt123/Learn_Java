@@ -5,11 +5,12 @@ package WORLD;
 //import CONCEPTS.Constructor;
 //import CONCEPTS.Singleton;
 //import CONCEPTS.Initialization_Static_Block;
-import ASSIGNMENT.A9_WRAPPERCLASS;
+//import ASSIGNMENT.A9_WRAPPERCLASS;
+import ASSINGNMENT.A10_CLA;
 
 public class HelloWorld {
     public static void main(String[] args){
-        A9_WRAPPERCLASS Q1 = new A9_WRAPPERCLASS();
+        A10_CLA Q1 = new A10_CLA(args);
           Q1.driver();
     }
 }
