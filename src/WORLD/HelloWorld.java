@@ -10,18 +10,24 @@ package WORLD;
 //import CONCEPTS.Inheritance;
 //import ASSIGNMENT.A11_javaPackages;
 //import CONCEPTS.This_Super;
-import ASSIGNMENT.A12_UserInput;
 //import ASSIGNMENT.A13_UserInput2;
 //import ASSIGNMENT.A15_Constructor;
 //import ASSIGNMENT.A16_Inheritance;
 
-//import ASSIGNMENT.A17_OverRiding_OverLoading;
-import CONCEPTS.AditionFrame;
+import CONCEPTS.JDBC;
+
+import java.sql.SQLException;
 
 
 public class HelloWorld {
     public static void main(String[] args) {
-        CONCEPTS.AditionFrame Q1 = new CONCEPTS.AditionFrame();
+//        CONCEPTS.JDBC Q1 = new  CONCEPTS.JDBC();
+        try {
+            JDBC.getConnection();
+        }
+        catch(SQLException e){
+            System.out.println(e.getMessage());
+        }
 //        Q1.driver();
 //        Q1.FileRead();
 
